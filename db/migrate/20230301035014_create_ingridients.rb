@@ -3,7 +3,7 @@ class CreateIngridients < ActiveRecord::Migration[6.1]
     create_table :ingridients do |t|
       t.string :name
       t.integer :quantity
-      t.references :recipe, foreign_key: true
-    end
+      t.integer :recipe_id
+      end
   end
 end
