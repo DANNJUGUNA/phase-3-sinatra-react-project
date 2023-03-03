@@ -35,7 +35,7 @@ class IngridientController < ApplicationController
        )
        ingridient.to_json
         end
-        delete"/ingridient/:id" do
+        delete"/ingridients/:id" do
           ingridient=Ingridient.find_by(id: params[:id])
           ingridient.destroy
           {
